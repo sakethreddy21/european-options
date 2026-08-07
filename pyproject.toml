@@ -1,0 +1,12 @@
+[tool.pyright]
+venvPath = "backend"
+venv = ".venv"
+extraPaths = ["backend"]
+executionEnvironments = [
+  { root = "backend" }
+]
+
+[tool.pyrefly]
+project_roots = ["backend"]
+search_path = ["backend"]
+python_interpreter = "backend/.venv/bin/python"
