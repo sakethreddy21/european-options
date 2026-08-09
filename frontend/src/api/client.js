@@ -2,7 +2,7 @@
  * API Client for European Options Simulation Backend
  */
 
-const API_BASE_URL = 'https://european-options.vercel.app' || '/api';
+const API_BASE_URL = import.meta.env.VITE_API_URL || '/api';
 
 export async function fetchPriceComparison(params) {
   const response = await fetch(`${API_BASE_URL}/price`, {
