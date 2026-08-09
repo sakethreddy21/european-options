@@ -9,7 +9,7 @@ export default defineConfig({
     port: 5173,
     proxy: {
       '/api': {
-        target: 'https://european-options.vercel.app',
+        target: 'https://european-options.vercel.app/api',
         changeOrigin: true,
       }
     }
